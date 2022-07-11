@@ -1,29 +1,32 @@
 # Predicting Graduate School Acceptance Probability
 
-![Status Update](https://img.shields.io/badge/Status-Complete-green)
-![GitHub top language](https://img.shields.io/github/languages/top/sverma1012/grad_rates?color=blue)
+![Status Update](https://img.shields.io/badge/Status-Complete-brightgreen) 
+![R version](https://img.shields.io/badge/R%20version-4.2.1%2B-lightgrey)
+![GitHub repo size](https://img.shields.io/github/repo-size/siyamabu/Graduate-School_Acceptance)
+![License](https://img.shields.io/badge/License-MIT-green)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 Badge [source](https://shields.io/)
 
 ## Key findings
 
-
+This model suggests that CGPA is the most significant predictor towards graduate school admission. The prediction interval we would expect from our final model is 94.5%. Thus, we would expect and accuracy of approximately 95%. 
 
 ## Authors
 
 - [@siyamabu](https://www.github.com/siyamabu)
 
 **Language and Tools:**<br />
-* R :snake:
+* R 🏴‍☠️ 
 * R Notebook Notebook :notebook:
 * GitHub :heart_eyes:
 
-**Modules used:**<br />
-* Pandas
-* Scikit-learn
-* Numpy
-* Matplotlib
-* Seaborn
+**Libraries used:**<br />
+* vvd
+* mass
+* ggplot2
+* tidyr
+* dplyr
 
 **Environments Used:**<br />
 * Windows 10 🪟
@@ -53,44 +56,57 @@ This data  is related to graduate school adimission probability. The dataset con
 ## Methods
 
 1. Exploratory Data Analysis
-    * Historgrams of each quantitative predictor variable and an assessment of pairwise correlations between pairs of quantitative predictor variable.  
+    * Historgrams of each quantitative predictor variable 
+    * Scatterplot matrix
+    * An assessment of pairwise correlations between pairs of quantitative predictor variable
 2. First Order Model with All Predictors
-    * 
+    * Residual Analysis
+    * Box-Cox analysis to see if the response variable should be transformed
 3. Second Model with the transormed variable vs All Predictors
-    * 
+    * Residual Analyis
 4. Third Model using Stepwise Regression
-   * 
+   * AIC stepwise regression
+   * Interaction Analysis
 5. Fourth Model using Stepwise Regression with Centered Interaction Effects
+   * Residual and Influence Anaysis
+   * Variance inflation factors analysis
+   * Interaction Plots
 
 ## Quick Glance at the Results
 
-Correlations between variables.
+The final model is: 
 
-![heatmap](pictures/life_correlation_heatmap.png)
+Predicted chance of admission^2.5  = 0.453 + 0.171 (CGPA) + 0.029 (LOR) + 0.003 (GRE SCORE) + 0.004 (TOEFL SCORE) + 0.015(University Rating) + 0.005 (CGPA)(TOEFL SCORE) - 0.002 (LOR)(TOEFL SCORE) + 0.004 (LOR)(UNIVERSITY RATING). 0.001(GRE SCORE)((UNIVERSITY RATING))
 
-A comparison of the best results from each model.
+Residual Analysis of Final Model
 
-![graphx](pictures/model_results.png)
+![final model residuals](pictures/residuals_vs_fitted_plot.png)
 
-The Residuals vs Predicted Strength for the best linear regression model.
+Example Predictions from Final Model
 
-![graph1](pictures/residuals_vs_predicted_linear_regression.png) 
+![heatmap](pictures/example_predictions.png)
 
-The Observed Strength vs Predicted Strength for the best linear regression model.
+All of the six example students whose predictions are shown above have prediction intervals that contain the observed chance of admission. Furthermore, the prediction interval we would expect from this model is 94.5%.
 
-![graph2](pictures/observed_strength_vs_predicted_strength_linear%20regression.png)
+Normal Q-Q Plot of Final Model
 
-The Residuals vs Predicted Strength for the best decision tree regression model. 
+![graphx](pictures/qq_plot.png)
 
-![graph3](pictures/residuals_vs_predicted_decision_tree_regression.png)
+Chance of Admission vs. Fitted Values
 
-The Observed Strength vs Predicted Strength for the best decision tree regression model.
+![graph1](pictures/aaa.png) 
 
-![graph4](pictures/observed_strength_vs_predicted_strength_decision_tree_%20regression.png)
+Standardized residuals vs. Leverage Plot
 
-5 highest feature importance scores from the best decision tree model.
+![graph1](pictures/bbb.png) 
 
-![graphy](pictures/feature_importance.png) 
+Interaction Plot of TOEFL Score and CGPA. 
+
+![graph4](pictures/interaction_plot1.png)
+
+Interaction Plot of TOEFL Score and LOR.
+
+![graphy](pictures/interaction_plot2.png) 
 
 ## Lessons Learned and Recommendations
 -
