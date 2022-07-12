@@ -121,7 +121,7 @@ Interaction Plot of TOEFL Score and LOR.
 
 ## Explore the Notebook
 
-To explore the notebook file [here](https://github.com/siyamabu/Life-Expectancy/blob/main/life_expectancy_prediction.ipynb)
+To explore the notebook file [here](https://github.com/siyamabu/Graduate-School-Acceptance-/blob/main/graduate_school_probability.docx)
 
 ## License
 
