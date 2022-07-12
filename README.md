@@ -10,7 +10,7 @@ Badge [source](https://shields.io/)
 
 ## Key findings
 
-This model suggests that CGPA is the most significant predictor towards graduate school admission. The prediction interval we would expect from our final model is 94.5%. Thus, we would expect and accuracy of approximately 95%. 
+This model suggests that College GPA and Letters of Recommendation are the most significant predictors towards graduate school admission. The prediction interval we would expect from our final model is 94.5%. Thus, we would expect and accuracy of approximately 95%. 
 
 ## Authors
 
@@ -44,10 +44,11 @@ This model suggests that CGPA is the most significant predictor towards graduate
 
 ## Motivation 
 
+When an undergraduate student finishes their studies, they often seek to look for job opportunities or/and further their education. For those who choose to continue their academic journey by going to graduate school, understanding graduate school requirements becomes important. These requirements vary depending on each school's requirements, however, on many occasions, there are few common factors such as College GPA that can play a role in contributing to one’s chance of being accepted. Upon finishing my junior year of college, I wanted to know which graduate school requirements have more significance and would increase my chances of being accepted if I opted to futher my education. 
 
 ## Data Source
 
-- [Graduate Admissions)](https://www.kaggle.com/mohansacharya/graduate-admissions)
+- [Graduate Admissions](https://www.kaggle.com/mohansacharya/graduate-admissions)
 
 ## Dataset Description
 
@@ -109,10 +110,14 @@ Interaction Plot of TOEFL Score and LOR.
 ![graphy](pictures/interaction_plot2.png) 
 
 ## Lessons Learned and Recommendations
--
+- College GPA is the most significant predictor of graduate school acceptance probability
+- Letters of Reccommendation is the second most significant predictor
+- Given that some institutions have a minimum College GPA requirement for their Master's programs coupled with GPA's significance towards acceptance probability, it is important that one makes efforts towards maintaining a good undergraduate GPA if they wish to persue a Master's program
+- Build good relationships with professors, supervisors, advisors, etc, so you can have a good letter of reccommendation and increase the likelihood that you are accepted into a Graduate Program
 
 ## Limitations and What Can Be Improved
-- 
+- Each institution places importance on different factors
+- Work experience is a factor not considered in this project, including this factor could enrich the analysis
 
 ## Explore the Notebook
 
