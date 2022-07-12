@@ -121,7 +121,7 @@ Interaction Plot of TOEFL Score and LOR.
 
 ## Explore the Notebook
 
-To explore the notebook file [here](https://github.com/siyamabu/Graduate-School-Acceptance-/blob/main/graduate_school_probability.docx)
+To explore the knitted word document [here](https://github.com/siyamabu/Graduate-School-Acceptance-/blob/main/graduate_school_probability.docx)
 
 ## License
 
